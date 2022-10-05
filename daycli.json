@@ -78,5 +78,5 @@
         {"eccodes_key": "#3#airTemperature->associatedField", "value": 7},
         {"eccodes_key": "#3#airTemperature->associatedField->associatedFieldSignificance", "value": 5}
     ],
-    "wigos_identifier": {"csv_column": "wigos_station_identifier"}
+    "wigos_station_identifier": {"csv_column": "wigos_station_identifier"}
 }
