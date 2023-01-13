@@ -3,7 +3,8 @@
     "inputDelayedDescriptorReplicationFactor": [],
     "inputExtendedDelayedDescriptorReplicationFactor": [],
     "number_header_rows": 1,
-    "names_on_row": 1,
+    "column_names_row": 1,
+    "wigos_station_identifier": "data:wigos_station_identifier",
     "header": [
         {"eccodes_key": "edition", "value": "const:4"},
         {"eccodes_key": "masterTableNumber", "value": "const:0"},
@@ -80,5 +81,4 @@
         {"eccodes_key": "#3#airTemperature->associatedField", "value": "const:7"},
         {"eccodes_key": "#3#airTemperature->associatedField->associatedFieldSignificance", "value": "const:5"}
     ],
-    "wigos_station_identifier": "data:wigos_station_identifier"
 }
