@@ -1,3 +1,5 @@
+Please note this has now been archived and the templates moved fully to [csv2bufr](https://github.com/wmo-im/csv2bufr).
+
 ## csv2bufr-templates
 
 Repository for csv2bufr templates
