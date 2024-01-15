@@ -1,4 +1,15 @@
 {
+    "conformsTo": "csv2bufr-template-v2.json",
+    "metadata": {
+        "label": "daycli-template",
+        "description": "Mapping template for converting daily climate CSV data to BUFR sequence 307075",
+        "version": "2",
+        "author": "David I. Berry",
+        "editor": "",
+        "dateCreated": "2023-09-01",
+        "dateModified": "2024-01-12",
+        "id": "4a077105-d52c-458b-867a-1dfb743156d0"
+    },
     "inputShortDelayedDescriptorReplicationFactor": [],
     "inputDelayedDescriptorReplicationFactor": [],
     "inputExtendedDelayedDescriptorReplicationFactor": [],
@@ -8,8 +19,6 @@
     "header": [
         {"eccodes_key": "edition", "value": "const:4"},
         {"eccodes_key": "masterTableNumber", "value": "const:0"},
-        {"eccodes_key": "bufrHeaderCentre", "value": "const:0"},
-        {"eccodes_key": "bufrHeaderSubCentre", "value": "const:0"},
         {"eccodes_key": "updateSequenceNumber", "value": "const:0"},
         {"eccodes_key": "dataCategory", "value": "const:0"},
         {"eccodes_key": "internationalDataSubCategory", "value": "const:6"},
@@ -80,5 +89,5 @@
         {"eccodes_key": "#3#airTemperature", "value": "data:mean_air_temperature", "scale": "const:0", "offset": "const:273.15"},
         {"eccodes_key": "#3#airTemperature->associatedField", "value": "const:7"},
         {"eccodes_key": "#3#airTemperature->associatedField->associatedFieldSignificance", "value": "const:5"}
-    ],
+    ]
 }

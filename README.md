@@ -1,9 +1,9 @@
-Please note this has now been archived and the templates moved fully to [csv2bufr](https://github.com/wmo-im/csv2bufr).
-
 ## csv2bufr-templates
 
 Repository for csv2bufr templates
 
 ## Contents
 
--  synop-bufr.json: template developed and used for converting CSV from the MW project to BUFR sequences 301150 + 307080 (WSI and SYNOP). 
+- aws-template.json: Template for simplified CSV data from automatic weather stations.
+- daycli-template.json: Template for daily climate data.
+- synop-template.json: Template for CSV data from manual weather stations.
