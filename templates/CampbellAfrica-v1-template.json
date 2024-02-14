@@ -2,12 +2,12 @@
     "conformsTo": "csv2bufr-template-v2.json",
     "metadata": {
         "label": "Surface land stations (Campbell - Africa)",
-        "description": "Mapping template for converting CSV data from Campbell data loggers configured and deployed in Africa to BUFR seqeunce 301150, 307080. Template based on synop-template (c754dbb9-ee5e-4346-8b4b-3b9c1ba43290).",
+        "description": "Mapping template for converting CSV data from Campbell data loggers configured and deployed in Africa to BUFR seqeunce 301150, 307080.",
         "version": "1",
         "author": "David I. Berry",
         "editor": "",
-        "dateCreated": "2024-02-13",
-        "dateModified": "2024-02-13",
+        "dateCreated": "2024-02-14",
+        "dateModified": "",
         "id": "52915a45-02ab-4959-8e3b-9c8c26ddd18b"
     },
     "inputShortDelayedDescriptorReplicationFactor": [],
