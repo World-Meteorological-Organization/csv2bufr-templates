@@ -6,4 +6,4 @@ Repository for csv2bufr templates
 
 - aws-template.json: Template for simplified CSV data from automatic weather stations.
 - daycli-template.json: Template for daily climate data.
-- synop-template.json: Template for CSV data from manual weather stations.
+- CampbellAfrica-v1-template.json: Template for CSV data from Cambell AWS stations deployed in Africa.
