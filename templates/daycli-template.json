@@ -1,4 +1,4 @@
-{
+
     "conformsTo": "csv2bufr-template-v2.json",
     "metadata": {
         "label": "daycli-template",
@@ -15,7 +15,7 @@
     "inputExtendedDelayedDescriptorReplicationFactor": [],
     "number_header_rows": 1,
     "column_names_row": 1,
-    "wigos_station_identifier": "data:wigos_station_identifier",
+    "quoting": "QUOTE_NONE",
     "header": [
         {"eccodes_key": "edition", "value": "const:4"},
         {"eccodes_key": "masterTableNumber", "value": "const:0"},
@@ -36,7 +36,7 @@
     "data": [
         {"eccodes_key": "#1#wigosIdentifierSeries", "value": "data:wsi_series"},
         {"eccodes_key": "#1#wigosIssuerOfIdentifier", "value": "data:wsi_issuer"},
-        {"eccodes_key": "#1#wigosIssueNumber", "value": "data:wsi_issue"},
+        {"eccodes_key": "#1#wigosIssueNumber", "value": "data:wsi_issue_number"},
         {"eccodes_key": "#1#wigosLocalIdentifierCharacter", "value": "data:wsi_local"},
         {"eccodes_key": "#1#latitude", "value": "data:lat", "valid_min": "const:-90.0", "valid_max": "const:90.0"},
         {"eccodes_key": "#1#longitude", "value": "data:lon", "valid_min": "const:-180.0", "valid_max": "const:180.0"},
