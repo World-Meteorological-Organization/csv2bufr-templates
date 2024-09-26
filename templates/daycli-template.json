@@ -15,6 +15,7 @@
     "inputExtendedDelayedDescriptorReplicationFactor": [],
     "number_header_rows": 1,
     "column_names_row": 1,
+    "quoting": "QUOTE_NONE",
     "header": [
         {"eccodes_key": "edition", "value": "const:4"},
         {"eccodes_key": "masterTableNumber", "value": "const:0"},
