@@ -1,5 +1,5 @@
 {
-    "conformsTo": "csv2bufr-template-v2.json",
+    "conformsTo": ["csv2bufr-template-v2.json"],
     "metadata": {
         "label": "CLIMAT",
         "description": "CSV2BUFR template for the encoding of CLIMAT data.",
