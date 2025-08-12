@@ -152,16 +152,16 @@
         {
             "eccodes_key": "#1#month",
             "value": "data:month",
-            "valid_min": "const:0",
-            "valid_max": "const:15",
+            "valid_min": "const:1",
+            "valid_max": "const:12",
             "scale": "const:0",
             "offset": "const:0"
         },
         {
             "eccodes_key": "#1#day",
             "value": "data:day",
-            "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_min": "const:1",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -169,7 +169,7 @@
             "eccodes_key": "#1#hour",
             "value": "data:hour",
             "valid_min": "const:0",
-            "valid_max": "const:31",
+            "valid_max": "const:24",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -177,7 +177,7 @@
             "eccodes_key": "#1#minute",
             "value": "data:minute",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:60",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -185,7 +185,7 @@
             "eccodes_key": "#1#latitude",
             "value": "data:latitude",
             "valid_min": "const:-90.0",
-            "valid_max": "const:245.54431",
+            "valid_max": "const:90.0",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -193,7 +193,7 @@
             "eccodes_key": "#1#longitude",
             "value": "data:longitude",
             "valid_min": "const:-180.0",
-            "valid_max": "const:491.08863",
+            "valid_max": "const:180.0",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -216,16 +216,16 @@
         {
             "eccodes_key": "#1#timePeriod",
             "value": "data:time_zone_offset",
-            "valid_min": "const:-128",
-            "valid_max": "const:127",
+            "valid_min": "const:-13",
+            "valid_max": "const:13",
             "scale": "const:0",
             "offset": "const:0"
         },
         {
             "eccodes_key": "#2#timePeriod",
             "value": "data:days_in_month",
-            "valid_min": "const:-1024",
-            "valid_max": "const:1023",
+            "valid_min": "const:27",
+            "valid_max": "const:32",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -287,7 +287,7 @@
         },
         {
             "eccodes_key": "#1#indicatorToSpecifyObservingMethodForExtremeTemperatures",
-            "value": "data:indicator_to_specify_observing_method_for_extreme_temperatures",
+            "value": "data:method_for_extreme_temperatures",
             "valid_min": "const:0",
             "valid_max": "const:15",
             "scale": "const:0",
@@ -297,7 +297,7 @@
             "eccodes_key": "#1#principalTimeOfDailyReadingOfMaximumTemperature",
             "value": "data:daily_read_time_max_temp",
             "valid_min": "const:0",
-            "valid_max": "const:31",
+            "valid_max": "const:24",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -313,7 +313,7 @@
             "eccodes_key": "#1#principalTimeOfDailyReadingOfMinimumTemperature",
             "value": "data:daily_read_time_min_temp",
             "valid_min": "const:0",
-            "valid_max": "const:31",
+            "valid_max": "const:24",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -334,26 +334,10 @@
             "offset": "const:0"
         },
         {
-            "eccodes_key": "#2#firstOrderStatistics",
-            "value": "const:63",
-            "valid_min": "const:0",
-            "valid_max": "const:63",
-            "scale": "const:0",
-            "offset": "const:0"
-        },
-        {
             "eccodes_key": "#1#dailyMeanTemperatureStandardDeviation",
             "value": "data:daily_mean_temp_deviation",
             "valid_min": "const:0.0",
             "valid_max": "const:40.95",
-            "scale": "const:0",
-            "offset": "const:0"
-        },
-        {
-            "eccodes_key": "#2#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
-            "value": "const:655.35",
-            "valid_min": "const:0.0",
-            "valid_max": "const:655.35",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -369,7 +353,7 @@
             "eccodes_key": "#1#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
             "value": "data:pressure_missing",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -385,7 +369,7 @@
             "eccodes_key": "#2#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
             "value": "data:temperature_missing",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -401,7 +385,7 @@
             "eccodes_key": "#3#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
             "value": "data:vap_pressure_missing",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -417,7 +401,7 @@
             "eccodes_key": "#4#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
             "value": "data:max_temperature_missing",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -433,7 +417,7 @@
             "eccodes_key": "#5#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
             "value": "data:min_temperature_missing",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -447,9 +431,9 @@
         },
         {
             "eccodes_key": "#2#totalSunshine",
-            "value": "data:2total_sunshine",
+            "value": "data:total_sunshine_percent",
             "valid_min": "const:0",
-            "valid_max": "const:511",
+            "valid_max": "const:100",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -465,7 +449,7 @@
             "eccodes_key": "#6#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
             "value": "data:sunshine_days_missing",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -481,7 +465,7 @@
             "eccodes_key": "#1#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:wind_over_10mps_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -497,7 +481,7 @@
             "eccodes_key": "#2#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:wind_over_20mps_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -513,7 +497,7 @@
             "eccodes_key": "#3#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:wind_over_30mps_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -529,7 +513,7 @@
             "eccodes_key": "#4#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:max_temp_below_zero_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -545,7 +529,7 @@
             "eccodes_key": "#5#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:max_temp_above_25_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -561,7 +545,7 @@
             "eccodes_key": "#6#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:max_temp_above_30_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -577,7 +561,7 @@
             "eccodes_key": "#7#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:max_temp_above_35_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -593,7 +577,7 @@
             "eccodes_key": "#8#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:max_temp_above_40_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -609,7 +593,7 @@
             "eccodes_key": "#9#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:min_temp_below_zero_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -625,7 +609,7 @@
             "eccodes_key": "#10#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:snow_over_0cm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -641,7 +625,7 @@
             "eccodes_key": "#11#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:snow_over_1cm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -657,7 +641,7 @@
             "eccodes_key": "#12#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:snow_over_10cm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -673,7 +657,7 @@
             "eccodes_key": "#13#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:snow_over_50cm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -689,7 +673,7 @@
             "eccodes_key": "#14#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:horizontal_visibility_below_50m_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -705,7 +689,7 @@
             "eccodes_key": "#15#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:horizontal_visibility_below_100m_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -721,7 +705,7 @@
             "eccodes_key": "#16#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:horizontal_visibility_below_1000m_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -737,7 +721,7 @@
             "eccodes_key": "#17#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:hail_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -753,7 +737,7 @@
             "eccodes_key": "#18#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:storm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -777,7 +761,7 @@
             "eccodes_key": "#2#day",
             "value": "data:highest_daily_mean_temperature_day",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -801,7 +785,7 @@
             "eccodes_key": "#3#day",
             "value": "data:lowest_daily_mean_temperature_day",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -825,7 +809,7 @@
             "eccodes_key": "#4#day",
             "value": "data:monthly_max_temperature_day",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -857,7 +841,7 @@
             "eccodes_key": "#5#day",
             "value": "data:monthly_min_temperature_day",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -874,14 +858,6 @@
             "value": "data:monthly_min_temperature",
             "valid_min": "const:0.0",
             "valid_max": "const:655.35",
-            "scale": "const:0",
-            "offset": "const:0"
-        },
-        {
-            "eccodes_key": "#5#firstOrderStatistics",
-            "value": "const:63",
-            "valid_min": "const:0",
-            "valid_max": "const:63",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -913,7 +889,7 @@
             "eccodes_key": "#6#day",
             "value": "data:maximum_instantaneous_wind_speed_day",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -937,7 +913,7 @@
             "eccodes_key": "#7#day",
             "value": "const:1",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -945,15 +921,15 @@
             "eccodes_key": "#2#hour",
             "value": "const:6",
             "valid_min": "const:0",
-            "valid_max": "const:31",
+            "valid_max": "const:24",
             "scale": "const:0",
             "offset": "const:0"
         },
         {
             "eccodes_key": "#3#timePeriod",
             "value": "data:days_in_month",
-            "valid_min": "const:-1024",
-            "valid_max": "const:1023",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -985,7 +961,7 @@
             "eccodes_key": "#1#numberOfDaysWithPrecipitationEqualToOrMoreThan1Mm",
             "value": "data:days_with_precipitation_above_1mm",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1001,7 +977,7 @@
             "eccodes_key": "#7#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
             "value": "data:total_missing_days_with_respect_to_accumulation_or_average_precipitation",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1017,7 +993,7 @@
             "eccodes_key": "#19#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:rain_above_1kgpsm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1033,7 +1009,7 @@
             "eccodes_key": "#20#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:rain_above_5kgpsm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1049,7 +1025,7 @@
             "eccodes_key": "#21#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:rain_above_10kgpsm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1065,7 +1041,7 @@
             "eccodes_key": "#22#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:rain_above_50kgpsm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1081,7 +1057,7 @@
             "eccodes_key": "#23#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:rain_above_100kgpsm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1097,7 +1073,7 @@
             "eccodes_key": "#24#totalNumberWithRespectToAccumulationOrAverage",
             "value": "data:rain_above_150kgpsm_days",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1113,7 +1089,7 @@
             "eccodes_key": "#8#day",
             "value": "data:highest_daily_amount_of_precipitation_day",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1122,14 +1098,6 @@
             "value": "data:highest_daily_amount_of_precipitation",
             "valid_min": "const:-0.1",
             "valid_max": "const:1638.2",
-            "scale": "const:0",
-            "offset": "const:0"
-        },
-        {
-            "eccodes_key": "#6#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
-            "value": "const:655.35",
-            "valid_min": "const:0.0",
-            "valid_max": "const:655.35",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1153,7 +1121,7 @@
             "eccodes_key": "#2#month",
             "value": "data:month",
             "valid_min": "const:0",
-            "valid_max": "const:15",
+            "valid_max": "const:12",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1161,7 +1129,7 @@
             "eccodes_key": "#9#day",
             "value": "const:1",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1169,15 +1137,15 @@
             "eccodes_key": "#3#hour",
             "value": "const:0",
             "valid_min": "const:0",
-            "valid_max": "const:31",
+            "valid_max": "const:24",
             "scale": "const:0",
             "offset": "const:0"
         },
         {
             "eccodes_key": "#4#timePeriod",
             "value": "data:time_zone_offset",
-            "valid_min": "const:-128",
-            "valid_max": "const:127",
+            "valid_min": "const:-13",
+            "valid_max": "const:13",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1257,7 +1225,7 @@
             "eccodes_key": "#2#principalTimeOfDailyReadingOfMaximumTemperature",
             "value": "data:daily_read_time_max_temp",
             "valid_min": "const:0",
-            "valid_max": "const:31",
+            "valid_max": "const:24",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1273,7 +1241,7 @@
             "eccodes_key": "#2#principalTimeOfDailyReadingOfMinimumTemperature",
             "value": "data:daily_read_time_min_temp",
             "valid_min": "const:0",
-            "valid_max": "const:31",
+            "valid_max": "const:24",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1345,7 +1313,7 @@
             "eccodes_key": "#3#month",
             "value": "data:month",
             "valid_min": "const:0",
-            "valid_max": "const:15",
+            "valid_max": "const:12",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1401,7 +1369,7 @@
             "eccodes_key": "#2#numberOfDaysWithPrecipitationEqualToOrMoreThan1Mm",
             "value": "data:normal_days_with_precipitation_above_1mm",
             "valid_min": "const:0",
-            "valid_max": "const:63",
+            "valid_max": "const:31",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1423,9 +1391,9 @@
         },
         {
             "eccodes_key": "#8#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_pressure_missing",
+            "value": "data:normal_pressure_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1439,9 +1407,9 @@
         },
         {
             "eccodes_key": "#9#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_temperature_missing",
+            "value": "data:normal_temperature_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1455,9 +1423,9 @@
         },
         {
             "eccodes_key": "#10#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_extreme_temperature_missing",
+            "value": "data:normal_extreme_temperature_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1471,9 +1439,9 @@
         },
         {
             "eccodes_key": "#11#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_vapour_pressure_missing",
+            "value": "data:normal_vapour_pressure_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1487,9 +1455,9 @@
         },
         {
             "eccodes_key": "#12#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_rain_missing",
+            "value": "data:normal_rain_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1503,9 +1471,9 @@
         },
         {
             "eccodes_key": "#13#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_sunshine_duration_missing",
+            "value": "data:normal_sunshine_duration_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1519,9 +1487,9 @@
         },
         {
             "eccodes_key": "#14#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_max_temperature_missing",
+            "value": "data:normal_max_temperature_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         },
@@ -1535,9 +1503,9 @@
         },
         {
             "eccodes_key": "#15#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
-            "value": "data:normal_min_temperature_missing",
+            "value": "data:normal_min_temperature_missing_years",
             "valid_min": "const:0",
-            "valid_max": "const:65535",
+            "valid_max": "const:1000",
             "scale": "const:0",
             "offset": "const:0"
         }
