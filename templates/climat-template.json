@@ -1,0 +1,1277 @@
+{
+    "conformsTo": "csv2bufr-template-v2.json",
+    "metadata": {
+        "label": "CLIMAT",
+        "description": "CSV2BUFR template for the encoding of CLIMAT data.",
+        "version": "1.0",
+        "author": "Alberto Helguera Fleitas",
+        "editor": "",
+        "dateCreated": "2025-07-09",
+        "dateModified": "2025-07-09",
+        "id": "99cad042-a73d-40a9-a646-cf140612394d"
+    },
+    "inputDelayedDescriptorReplicationFactor": [],
+    "inputShortDelayedDescriptorReplicationFactor": [],
+    "inputExtendedDelayedDescriptorReplicationFactor": [],
+    "number_header_rows": 1,
+    "column_names_row": 1,
+    "delimiter": ",",
+    "quoting": "QUOTE_NONE",
+    "quotechar": "",
+    "header": [
+        {
+            "eccodes_key": "edition",
+            "value": "const:4"
+        },
+        {
+            "eccodes_key": "masterTableNumber",
+            "value": "const:0"
+        },
+        {
+            "eccodes_key": "bufrHeaderCentre",
+            "value": ""
+        },
+        {
+            "eccodes_key": "dataCategory",
+            "value": "const:0"
+        },
+        {
+            "eccodes_key": "internationalDataSubCategory",
+            "value": "const:20"
+        },
+        {
+            "eccodes_key": "masterTablesVersionNumber",
+            "value": "const:40"
+        },
+        {
+            "eccodes_key": "typicalYear",
+            "value": "data:year"
+        },
+        {
+            "eccodes_key": "typicalMonth",
+            "value": "data:month"
+        },
+        {
+            "eccodes_key": "typicalDay",
+            "value": "data:day"
+        },
+        {
+            "eccodes_key": "typicalHour",
+            "value": "data:hour"
+        },
+        {
+            "eccodes_key": "typicalMinute",
+            "value": "data:minute"
+        },
+        {
+            "eccodes_key": "typicalSecond",
+            "value": "const:0"
+        },
+        {
+            "eccodes_key": "numberOfSubsets",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "observedData",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "compressedData",
+            "value": "const:0"
+        },
+        {
+            "eccodes_key": "unexpandedDescriptors",
+            "value": "array:301150,307073"
+        }
+    ],
+    "data": [
+        {
+            "eccodes_key": "#1#wigosIdentifierSeries",
+            "value": "data:wigos_identifier_series",
+            "valid_min": "const:0",
+            "valid_max": "const:0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#wigosIssuerOfIdentifier",
+            "value": "data:wigos_issuer_of_identifier",
+            "valid_min": "const:0",
+            "valid_max": "const:65534",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#wigosIssueNumber",
+            "value": "data:wigos_issue_number",
+            "valid_min": "const:0",
+            "valid_max": "const:65534",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#wigosLocalIdentifierCharacter",
+            "value": "data:wigos_local_identifier_character"
+        },
+        {
+            "eccodes_key": "#1#blockNumber",
+            "value": "data:block_number",
+            "valid_min": "const:0",
+            "valid_max": "const:99",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#stationNumber",
+            "value": "data:station_number",
+            "valid_min": "const:0",
+            "valid_max": "const:999",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#stationOrSiteName",
+            "value": "data:station_or_site_name"
+        },
+        {
+            "eccodes_key": "#1#stationType",
+            "value": "data:station_type",
+            "valid_min": "const:0",
+            "valid_max": "const:3",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#year",
+            "value": "data:year",
+            "valid_min": "const:1800",
+            "valid_max": "const:2050",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#month",
+            "value": "data:month",
+            "valid_min": "const:1",
+            "valid_max": "const:12",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#day",
+            "value": "data:day",
+            "valid_min": "const:1",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#hour",
+            "value": "data:hour",
+            "valid_min": "const:0",
+            "valid_max": "const:23",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#minute",
+            "value": "data:minute",
+            "valid_min": "const:0",
+            "valid_max": "const:59",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#latitude",
+            "value": "data:latitude",
+            "valid_min": "const:-90.0",
+            "valid_max": "const:90.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#longitude",
+            "value": "data:longitude",
+            "valid_min": "const:-180.0",
+            "valid_max": "const:180.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#heightOfStationGroundAboveMeanSeaLevel",
+            "value": "data:height_of_station",
+            "valid_min": "const:-400.0",
+            "valid_max": "const:9000.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#heightOfBarometerAboveMeanSeaLevel",
+            "value": "data:height_of_barometer",
+            "valid_min": "const:-400.0",
+            "valid_max": "const:9000.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#timePeriod",
+            "value": "data:time_zone_offset",
+            "valid_min": "const:-13",
+            "valid_max": "const:13",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#timePeriod",
+            "value": "data:days_in_month",
+            "valid_min": "const:27",
+            "valid_max": "const:32",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#firstOrderStatistics",
+            "value": "const:4"
+        },
+        {
+            "eccodes_key": "#1#nonCoordinatePressure",
+            "value": "data:mean_pressure",
+            "valid_min": "const:50000",
+            "valid_max": "const:110000",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#pressureReducedToMeanSeaLevel",
+            "value": "data:mean_pressure_sea_level",
+            "valid_min": "const:50000",
+            "valid_max": "const:110000",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#pressure",
+            "value": "data:standard_pressure_level",
+            "valid_min": "const:50000",
+            "valid_max": "const:150000",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#nonCoordinateGeopotentialHeight",
+            "value": "data:geopotential_height",
+            "valid_min": "const:-1000",
+            "valid_max": "const:130071",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
+            "value": "data:height_of_sensor",
+            "valid_min": "const:0.0",
+            "valid_max": "const:10.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#airTemperature",
+            "value": "data:air_temperature",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#indicatorToSpecifyObservingMethodForExtremeTemperatures",
+            "value": "data:method_for_extreme_temperatures",
+            "valid_min": "const:1",
+            "valid_max": "const:3",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#principalTimeOfDailyReadingOfMaximumTemperature",
+            "value": "data:daily_read_time_max_temp",
+            "valid_min": "const:0",
+            "valid_max": "const:23",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#maximumTemperatureAtHeightSpecifiedPast24Hours",
+            "value": "data:max_temperature_last_24h",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#principalTimeOfDailyReadingOfMinimumTemperature",
+            "value": "data:daily_read_time_min_temp",
+            "valid_min": "const:0",
+            "valid_max": "const:23",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#minimumTemperatureAtHeightSpecifiedPast24Hours",
+            "value": "data:min_temperature_last_24h",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#vapourPressure",
+            "value": "data:vapour_pressure",
+            "valid_min": "const:0",
+            "valid_max": "const:10230",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#dailyMeanTemperatureStandardDeviation",
+            "value": "data:daily_mean_temp_deviation",
+            "valid_min": "const:0.0",
+            "valid_max": "const:40.95",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#1#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:days_missing_pressure",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:2"
+        },
+        {
+            "eccodes_key": "#2#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:days_missing_mean_temperature",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:4"
+        },
+        {
+            "eccodes_key": "#3#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:days_missing_vapour_pressure",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#4#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:7"
+        },
+        {
+            "eccodes_key": "#4#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:days_missing_max_temperature",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#5#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:8"
+        },
+        {
+            "eccodes_key": "#5#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:days_missing_min_temperature",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#totalSunshine",
+            "value": "data:total_sunshine_hours",
+            "valid_min": "const:0",
+            "valid_max": "const:744",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#totalSunshine",
+            "value": "data:total_sunshine_percent",
+            "valid_min": "const:0",
+            "valid_max": "const:100",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#6#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:6"
+        },
+        {
+            "eccodes_key": "#6#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:days_missing_total_sunshine",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:0"
+        },
+        {
+            "eccodes_key": "#1#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:wind_over_10mps_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#2#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:wind_over_20mps_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:2"
+        },
+        {
+            "eccodes_key": "#3#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:wind_over_30mps_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#4#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:3"
+        },
+        {
+            "eccodes_key": "#4#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:max_temp_below_zero_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#5#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:4"
+        },
+        {
+            "eccodes_key": "#5#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:max_temp_above_25_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#6#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:5"
+        },
+        {
+            "eccodes_key": "#6#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:max_temp_above_30_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#7#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:6"
+        },
+        {
+            "eccodes_key": "#7#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:max_temp_above_35_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#8#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:7"
+        },
+        {
+            "eccodes_key": "#8#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:max_temp_above_40_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#9#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:8"
+        },
+        {
+            "eccodes_key": "#9#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:min_temp_below_zero_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#10#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:16"
+        },
+        {
+            "eccodes_key": "#10#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:snow_over_0cm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#11#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:17"
+        },
+        {
+            "eccodes_key": "#11#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:snow_over_1cm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#12#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:18"
+        },
+        {
+            "eccodes_key": "#12#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:snow_over_10cm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#13#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:19"
+        },
+        {
+            "eccodes_key": "#13#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:snow_over_50cm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#14#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:20"
+        },
+        {
+            "eccodes_key": "#14#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:horizontal_visibility_below_50m_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#15#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:21"
+        },
+        {
+            "eccodes_key": "#15#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:horizontal_visibility_below_100m_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#16#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:22"
+        },
+        {
+            "eccodes_key": "#16#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:horizontal_visibility_below_1000m_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#17#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:23"
+        },
+        {
+            "eccodes_key": "#17#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:hail_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#18#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:24"
+        },
+        {
+            "eccodes_key": "#18#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:storm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
+            "value": "data:height_of_temp_sensor",
+            "valid_min": "const:0.0",
+            "valid_max": "const:655.35",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#dayOfOccurrenceQualifier",
+            "value": "data:highest_daily_mean_temperature_qualifier",
+            "valid_min": "const:0",
+            "valid_max": "const:1",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#day",
+            "value": "data:highest_daily_mean_temperature_day",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#highestDailyMeanTemperature",
+            "value": "data:highest_daily_mean_temperature",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#dayOfOccurrenceQualifier",
+            "value": "data:lowest_daily_mean_temperature_qualifier",
+            "valid_min": "const:0",
+            "valid_max": "const:1",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#day",
+            "value": "data:lowest_daily_mean_temperature_day",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#lowestDailyMeanTemperature",
+            "value": "data:lowest_daily_mean_temperature",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#dayOfOccurrenceQualifier",
+            "value": "data:monthly_max_temperature_qualifier",
+            "valid_min": "const:0",
+            "valid_max": "const:1",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#4#day",
+            "value": "data:monthly_max_temperature_day",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#firstOrderStatistics",
+            "value": "const:2"
+        },
+        {
+            "eccodes_key": "#2#airTemperature",
+            "value": "data:monthly_max_temperature",
+            "valid_min": "const:193.15",
+            "valid_max": "const:333.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#4#dayOfOccurrenceQualifier",
+            "value": "data:monthly_min_temperature_qualifier",
+            "valid_min": "const:0",
+            "valid_max": "const:1",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#5#day",
+            "value": "data:monthly_min_temperature_day",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#4#firstOrderStatistics",
+            "value": "const:3"
+        },
+        {
+            "eccodes_key": "#3#airTemperature",
+            "value": "data:monthly_min_temperature",
+            "valid_min": "const:193.15",
+            "valid_max": "const:333.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#4#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
+            "value": "data:height_of_wind_sensor",
+            "valid_min": "const:0.0",
+            "valid_max": "const:655.35",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#instrumentationForWindMeasurement",
+            "value": "data:instrumentation_for_wind_measurement",
+            "valid_min": "const:0",
+            "valid_max": "const:15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#5#dayOfOccurrenceQualifier",
+            "value": "data:maximum_instantaneous_wind_speed_qualifier",
+            "valid_min": "const:0",
+            "valid_max": "const:1",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#6#day",
+            "value": "data:maximum_instantaneous_wind_speed_day",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#maximumInstantaneousWindSpeed",
+            "value": "data:maximum_instantaneous_wind_speed",
+            "valid_min": "const:0.0",
+            "valid_max": "const:150.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#7#day",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#2#hour",
+            "value": "const:6"
+        },
+        {
+            "eccodes_key": "#3#timePeriod",
+            "value": "data:days_in_month",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#5#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
+            "value": "data:height_of_rain_sensor",
+            "valid_min": "const:0.0",
+            "valid_max": "const:655.35",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#totalAccumulatedPrecipitation",
+            "value": "data:total_accumulated_precipitation",
+            "valid_min": "const:-0.1",
+            "valid_max": "const:13107.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#frequencyGroupPrecipitation",
+            "value": "data:frequency_group_precipitation",
+            "valid_min": "const:0",
+            "valid_max": "const:15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#numberOfDaysWithPrecipitationEqualToOrMoreThan1Mm",
+            "value": "data:days_with_precipitation_above_1mm",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#7#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:5"
+        },
+        {
+            "eccodes_key": "#7#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:total_missing_days_with_respect_to_accumulation_or_average_precipitation",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#19#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:10"
+        },
+        {
+            "eccodes_key": "#19#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:rain_above_1kgpsm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#20#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:11"
+        },
+        {
+            "eccodes_key": "#20#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:rain_above_5kgpsm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#21#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:12"
+        },
+        {
+            "eccodes_key": "#21#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:rain_above_10kgpsm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#22#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:13"
+        },
+        {
+            "eccodes_key": "#22#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:rain_above_50kgpsm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#23#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:14"
+        },
+        {
+            "eccodes_key": "#23#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:rain_above_100kgpsm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#24#conditionForWhichNumberOfDaysOfOccurrenceFollows",
+            "value": "const:15"
+        },
+        {
+            "eccodes_key": "#24#totalNumberWithRespectToAccumulationOrAverage",
+            "value": "data:rain_above_150kgpsm_days",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#7#dayOfOccurrenceQualifier",
+            "value": "data:highest_daily_amount_of_precipitation_qualifier",
+            "valid_min": "const:0",
+            "valid_max": "const:1",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#8#day",
+            "value": "data:highest_daily_amount_of_precipitation_day",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#1#highestDailyAmountOfPrecipitation",
+            "value": "data:highest_daily_amount_of_precipitation",
+            "valid_min": "const:-0.1",
+            "valid_max": "const:1638.2",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#year",
+            "value": "data:starting_reference_period_year",
+            "valid_min": "const:1800",
+            "valid_max": "const:2050",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#year",
+            "value": "data:ending_reference_period_year",
+            "valid_min": "const:1800",
+            "valid_max": "const:2050",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#month",
+            "value": "data:month",
+            "valid_min": "const:1",
+            "valid_max": "const:12",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#9#day",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#3#hour",
+            "value": "const:0"
+        },
+        {
+            "eccodes_key": "#4#timePeriod",
+            "value": "data:time_zone_offset",
+            "valid_min": "const:-13",
+            "valid_max": "const:13",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#5#timePeriod",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#6#firstOrderStatistics",
+            "value": "const:4"
+        },
+        {
+            "eccodes_key": "#2#nonCoordinatePressure",
+            "value": "data:normal_mean_pressure",
+            "valid_min": "const:50000",
+            "valid_max": "const:110000",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#pressureReducedToMeanSeaLevel",
+            "value": "data:normal_mean_pressure_sea_level",
+            "valid_min": "const:50000",
+            "valid_max": "const:110000",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#pressure",
+            "value": "data:normal_standard_pressure_level",
+            "valid_min": "const:50000",
+            "valid_max": "const:150000",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#nonCoordinateGeopotentialHeight",
+            "value": "data:normal_geopotential_height_of_pressure_level",
+            "valid_min": "const:-1000",
+            "valid_max": "const:130071",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#7#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
+            "value": "data:height_of_temp_sensor",
+            "valid_min": "const:0.0",
+            "valid_max": "const:655.35",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#4#airTemperature",
+            "value": "data:normal_air_temperature",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#indicatorToSpecifyObservingMethodForExtremeTemperatures",
+            "value": "data:method_for_extreme_temperatures",
+            "valid_min": "const:1",
+            "valid_max": "const:3",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#principalTimeOfDailyReadingOfMaximumTemperature",
+            "value": "data:daily_read_time_max_temp",
+            "valid_min": "const:0",
+            "valid_max": "const:23",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#maximumTemperatureAtHeightSpecifiedPast24Hours",
+            "value": "data:normal_max_temperature_last_24h",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#principalTimeOfDailyReadingOfMinimumTemperature",
+            "value": "data:daily_read_time_min_temp",
+            "valid_min": "const:0",
+            "valid_max": "const:23",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#minimumTemperatureAtHeightSpecifiedPast24Hours",
+            "value": "data:normal_min_temperature_last_24h",
+            "valid_min": "const:183.15",
+            "valid_max": "const:343.15",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#vapourPressure",
+            "value": "data:normal_vapour_pressure",
+            "valid_min": "const:0",
+            "valid_max": "const:10230",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#dailyMeanTemperatureStandardDeviation",
+            "value": "data:normal_daily_mean_temp_deviation",
+            "valid_min": "const:0.0",
+            "valid_max": "const:40.95",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#totalSunshine",
+            "value": "data:normal_total_sunshine",
+            "valid_min": "const:0",
+            "valid_max": "const:744",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#7#firstOrderStatistics",
+            "value": "const:63"
+        },
+        {
+            "eccodes_key": "#4#year",
+            "value": "data:rain_starting_reference_period_year",
+            "valid_min": "const:1800",
+            "valid_max": "const:2050",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#5#year",
+            "value": "data:rain_ending_reference_period_year",
+            "valid_min": "const:1800",
+            "valid_max": "const:2050",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#3#month",
+            "value": "data:month",
+            "valid_min": "const:1",
+            "valid_max": "const:12",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#10#day",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#4#hour",
+            "value": "const:6"
+        },
+        {
+            "eccodes_key": "#6#timePeriod",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#9#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform",
+            "value": "data:height_of_rain_sensor",
+            "valid_min": "const:0.0",
+            "valid_max": "const:655.35",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#8#firstOrderStatistics",
+            "value": "const:4"
+        },
+        {
+            "eccodes_key": "#2#totalAccumulatedPrecipitation",
+            "value": "data:normal_total_accumulated_precipitation",
+            "valid_min": "const:-0.1",
+            "valid_max": "const:13107.0",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#2#numberOfDaysWithPrecipitationEqualToOrMoreThan1Mm",
+            "value": "data:normal_days_with_precipitation_above_1mm",
+            "valid_min": "const:0",
+            "valid_max": "const:31",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#8#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:1"
+        },
+        {
+            "eccodes_key": "#8#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_pressure_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#9#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:2"
+        },
+        {
+            "eccodes_key": "#9#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_temperature_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#10#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:3"
+        },
+        {
+            "eccodes_key": "#10#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_extreme_temperature_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#11#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:4"
+        },
+        {
+            "eccodes_key": "#11#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_vapour_pressure_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#12#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:5"
+        },
+        {
+            "eccodes_key": "#12#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_rain_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#13#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:6"
+        },
+        {
+            "eccodes_key": "#13#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_sunshine_duration_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#14#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:7"
+        },
+        {
+            "eccodes_key": "#14#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_max_temperature_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        },
+        {
+            "eccodes_key": "#15#qualifierForNumberOfMissingValuesInCalculationOfStatistic",
+            "value": "const:8"
+        },
+        {
+            "eccodes_key": "#15#totalNumberOfMissingEntitiesWithRespectToAccumulationOrAverage",
+            "value": "data:normal_min_temperature_missing_years",
+            "valid_min": "const:0",
+            "valid_max": "const:30",
+            "scale": "const:0",
+            "offset": "const:0"
+        }
+    ]
+}
