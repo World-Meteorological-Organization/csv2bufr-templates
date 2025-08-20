@@ -1,5 +1,5 @@
 {
-    "conformsTo": "csv2bufr-template-v2.json",
+    "conformsTo": ["csv2bufr-template-v2.json"],
     "metadata": {
         "label": "Surface land stations (AWS)",
         "description": "Mapping template for converting CSV data from simplified automatic weather station file to BUFR sequence 301150, 307096",

@@ -1,5 +1,5 @@
 {
-    "conformsTo": "csv2bufr-template-v2.json",
+    "conformsTo": ["csv2bufr-template-v2.json"],
     "metadata": {
         "label": "daycli-template",
         "description": "Mapping template for converting daily climate CSV data to BUFR sequence 307075",
