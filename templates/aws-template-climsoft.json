@@ -2,7 +2,7 @@
     "conformsTo": "csv2bufr-template-v2.json",
     "metadata": {
         "label": "Surface land stations export from Climsoft CDMS",
-        "description": "Mapping template for converting CSV data from Climsoft to BUFR sequence 301150, 307080, 002176, 002177, 302040, 101010, 307063",
+        "description": "Mapping template for converting CSV data from Climsoft to BUFR sequence 301150, 307080, 002176, 002177, 302040, 004024, 101010, 307063",
         "version": "1",
         "author": "David I. Berry",
         "editor": "Alberto Helguera",
@@ -31,7 +31,7 @@
         {"eccodes_key": "typicalDay", "value": "data:day"},
         {"eccodes_key": "typicalHour", "value": "data:hour"},
         {"eccodes_key": "typicalMinute", "value": "data:minute"},
-        {"eccodes_key": "unexpandedDescriptors", "value":"array:301150, 307080, 002176, 002177, 302040, 101010, 307063"}
+        {"eccodes_key": "unexpandedDescriptors", "value":"array:301150, 307080, 002176, 002177, 302040, 004024, 101010, 307063"}
     ],
     "data": [
         {"eccodes_key": "#1#wigosIdentifierSeries",                                "value":"data:wsi_series"},
