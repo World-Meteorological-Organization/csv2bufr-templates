@@ -8,3 +8,4 @@ Repository for csv2bufr templates
 - daycli-template.json: Template for daily climate data.
 - CampbellAfrica-v1-template.json: Template for CSV data from Cambell AWS stations deployed in Africa.
 - climat-template.json: Template for monthly climate data.
+- aws-template-climsoft.json: Template for csv output from Climsoft data management system.
