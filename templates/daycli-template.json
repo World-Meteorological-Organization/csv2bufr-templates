@@ -7,7 +7,7 @@
         "author": "David I. Berry",
         "editor": "David I. Berry",
         "dateCreated": "2023-09-01",
-        "dateModified": "2024-09-27",
+        "dateModified": "2026-07-24",
         "id": "2fe51aa5-d98a-4712-9954-45c7075462da"
     },
     "inputShortDelayedDescriptorReplicationFactor": [],
@@ -21,7 +21,7 @@
         {"eccodes_key": "masterTableNumber", "value": "const:0"},
         {"eccodes_key": "updateSequenceNumber", "value": "const:0"},
         {"eccodes_key": "dataCategory", "value": "const:0"},
-        {"eccodes_key": "internationalDataSubCategory", "value": "const:6"},
+        {"eccodes_key": "internationalDataSubCategory", "value": "const:21"},
         {"eccodes_key": "masterTablesVersionNumber", "value": "const:39"},
         {"eccodes_key": "typicalYear", "value": "data:year"},
         {"eccodes_key": "typicalMonth", "value": "data:month"},
