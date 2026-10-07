@@ -125,6 +125,9 @@ code table 0 31 021.
    * - 255
      - Missing (QC information not available)
 
+The template accepts flags 0 - 7. To encode a missing flag (255), leave the
+cell empty.
+
 A value is *aggregated* when it covers more than one daily period. This
 happens, for example, when a rain gauge or snow board is not read every day,
 so the reported total includes precipitation from earlier days. It also
@@ -348,10 +351,10 @@ columns.
      - 0
    * - ``wsi_issuer``
      - WIGOS issuer of identifier (second block), e.g. 20000
-     - 0 - 65535
+     - 0 - 65534
    * - ``wsi_issue_number``
      - WIGOS issue number (third block)
-     - 0 - 65535
+     - 0 - 65534
    * - ``wsi_local``
      - WIGOS local identifier (fourth block), e.g. 71805
      - text, up to 16 characters
