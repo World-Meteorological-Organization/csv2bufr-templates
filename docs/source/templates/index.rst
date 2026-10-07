@@ -15,8 +15,8 @@ template's BUFR sequence and expected input.
      - ``aws-template.json``
      - ``301150, 307096``
    * - :doc:`daycli`
-     - ``daycli-template.json``
-     - ``307075``
+     - ``daycli-v3.json``
+     - ``307095``
    * - :doc:`campbell-africa`
      - ``CampbellAfrica-v1-template.json``
      - ``301150, 307080``

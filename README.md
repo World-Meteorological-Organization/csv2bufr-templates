@@ -18,7 +18,8 @@ See the [csv2bufr documentation](https://csv2bufr.readthedocs.io) for details of
 ## Contents
 
 1. aws-template.json: Template for simplified CSV data from automatic weather stations.
-1. daycli-template.json: Template for daily climate data.
+1. daycli-template.json: Template for daily climate data (DAYCLI version 2, BUFR sequence 307075).
+1. daycli-v3.json: Template for daily climate data (DAYCLI version 3, BUFR sequence 307095).
 1. CampbellAfrica-v1-template.json: Template for CSV data from Campbell AWS stations deployed in Africa.
 1. climat-template.json: Template for monthly climate data.
 1. Climsoft-hourly.json: Template for CSV output from Climsoft data management system.
