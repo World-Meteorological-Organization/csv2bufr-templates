@@ -1,9 +1,10 @@
-daycli-template (DAYCLI v2, deprecated)
-=======================================
+daycli-template (deprecated)
+============================
 
 :Status: **Deprecated**, replaced by :doc:`daycli` (307095)
 :Template: :template:`daycli-template.json`
-:Version: 3
+:DAYCLI version: 2
+:Template version: 3
 :BUFR sequence: ``307075``
 :Data category / sub-category: 0 / 21
 :Template schema: ``csv2bufr-template-v2.json``

@@ -1,8 +1,8 @@
-daycli-template
-===============
+daycli-v3
+=========
 
 :Template: :template:`daycli-v3.json`
-:Version: 3
+:DAYCLI version: 3
 :BUFR sequence: ``307095``
 :Data category / sub-category: 0 / 21
 :Template schema: ``csv2bufr-template-v4.json``
@@ -14,6 +14,10 @@ The template sets ``"pack_subsets": true``, so all rows in the CSV file are
 encoded as subsets of a single BUFR message, rather than one message per
 row. This requires a version of csv2bufr that supports the
 ``csv2bufr-template-v4.json`` schema.
+
+This is the current DAYCLI template. The template for the deprecated DAYCLI
+version 2 (sequence 307075), ``daycli-template.json``, is described in
+:doc:`daycli-v2`.
 
 Background
 ----------
