@@ -4,7 +4,7 @@ daycli-template
 :Template: :template:`daycli-v3.json`
 :Version: 3
 :BUFR sequence: ``307095``
-:Data category / sub-category: 0 / 6
+:Data category / sub-category: 0 / 21
 :Template schema: ``csv2bufr-template-v4.json``
 :Header rows: 1 (column names in row 1)
 :Sample data: :sample:`daycli-v3.csv`
@@ -81,6 +81,8 @@ For example, for a station at UTC-4 with an Attribution day of 15 January
 
 For this row, ``utc_offset`` is ``-240`` and ``attribution_year``,
 ``attribution_month`` and ``attribution_day`` are ``2026``, ``1`` and ``15``.
+
+.. _quality-flags:
 
 Quality flags
 ^^^^^^^^^^^^^

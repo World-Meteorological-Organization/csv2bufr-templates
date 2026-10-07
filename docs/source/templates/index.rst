@@ -17,6 +17,9 @@ template's BUFR sequence and expected input.
    * - :doc:`daycli`
      - ``daycli-v3.json``
      - ``307095``
+   * - :doc:`daycli-v2`
+     - ``daycli-template.json``
+     - ``307075``
    * - :doc:`campbell-africa`
      - ``CampbellAfrica-v1-template.json``
      - ``301150, 307080``
@@ -36,6 +39,7 @@ template's BUFR sequence and expected input.
 
    aws
    daycli
+   daycli-v2
    campbell-africa
    climat
    climsoft-hourly

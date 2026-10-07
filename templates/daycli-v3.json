@@ -7,7 +7,7 @@
           "author": "",
           "editor": "",
           "dateCreated": "2026-10-06",
-          "dateModified": "2026-10-06",
+          "dateModified": "2026-10-07",
           "id": "ba02512f-c312-4778-aed0-b18c30d12f4e"
     },
     "inputDelayedDescriptorReplicationFactor": [],
@@ -24,7 +24,7 @@
         {"eccodes_key": "masterTableNumber", "value": "const:0"},
         {"eccodes_key": "bufrHeaderCentre", "value": ""},
         {"eccodes_key": "dataCategory", "value": "const:0"},
-        {"eccodes_key": "internationalDataSubCategory", "value": "const:6"},
+        {"eccodes_key": "internationalDataSubCategory", "value": "const:21"},
         {"eccodes_key": "masterTablesVersionNumber", "value": "const:46"},
         {"eccodes_key": "typicalYear", "value": "data:attribution_year"},
         {"eccodes_key": "typicalMonth", "value": "data:attribution_month"},
