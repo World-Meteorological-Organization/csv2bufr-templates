@@ -3,12 +3,36 @@
     "metadata": {
         "label": "CLIMAT",
         "description": "CSV2BUFR template for the encoding of CLIMAT data.",
-        "version": "1.0",
+        "version": "1.1",
         "author": "Alberto Helguera Fleitas",
-        "editor": "",
+        "editor": "David I. Berry",
         "dateCreated": "2025-07-09",
-        "dateModified": "2025-07-09",
-        "id": "99cad042-a73d-40a9-a646-cf140612394d"
+        "dateModified": "2026-10-07",
+        "id": "c802d3c6-fc95-443d-96db-41ff373a90b2",
+        "references": [
+            {
+                "title": "Manual on Codes (WMO-No. 306), Volume I.2",
+                "edition": "2023",
+                "section": "B/C30 - Regulations for reporting CLIMAT data in TDCF"
+            }
+        ],
+        "history": [
+            {
+                "version": "1.0",
+                "id": "99cad042-a73d-40a9-a646-cf140612394d",
+                "date": "2025-07-09",
+                "editor": "Alberto Helguera Fleitas",
+                "changes": "Initial version."
+            },
+            {
+                "version": "1.1",
+                "id": "c802d3c6-fc95-443d-96db-41ff373a90b2",
+                "date": "2026-10-07",
+                "editor": "David I. Berry",
+                "changes": "Start of month (Section 1 typical date/time and 301090 date/time) fixed to day 1, 00:00 instead of being read from the CSV; day, hour and minute columns removed.",
+                "references": ["B/C30.1.1", "B/C30.2.1.2"]
+            }
+        ]
     },
     "inputDelayedDescriptorReplicationFactor": [],
     "inputShortDelayedDescriptorReplicationFactor": [],
@@ -53,15 +77,15 @@
         },
         {
             "eccodes_key": "typicalDay",
-            "value": "data:day"
+            "value": "const:1"
         },
         {
             "eccodes_key": "typicalHour",
-            "value": "data:hour"
+            "value": "const:0"
         },
         {
             "eccodes_key": "typicalMinute",
-            "value": "data:minute"
+            "value": "const:0"
         },
         {
             "eccodes_key": "typicalSecond",
@@ -159,7 +183,7 @@
         },
         {
             "eccodes_key": "#1#day",
-            "value": "data:day",
+            "value": "const:1",
             "valid_min": "const:1",
             "valid_max": "const:31",
             "scale": "const:0",
@@ -167,7 +191,7 @@
         },
         {
             "eccodes_key": "#1#hour",
-            "value": "data:hour",
+            "value": "const:0",
             "valid_min": "const:0",
             "valid_max": "const:23",
             "scale": "const:0",
@@ -175,7 +199,7 @@
         },
         {
             "eccodes_key": "#1#minute",
-            "value": "data:minute",
+            "value": "const:0",
             "valid_min": "const:0",
             "valid_max": "const:59",
             "scale": "const:0",
