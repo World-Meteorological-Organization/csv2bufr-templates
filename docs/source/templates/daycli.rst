@@ -441,7 +441,7 @@ measurement are given.
      - Measurement minute (LMTZ)
      - 0 - 59
    * - ``total_snow_depth``
-     - Total depth of snow on the ground at the measurement time
+     - Total depth of snow on the ground at the measurement time. Use -0.01 for a trace and -0.02 for snow cover that is not continuous.
      - m
    * - ``total_snow_depth_quality``
      - Quality flag for ``total_snow_depth``
@@ -491,7 +491,7 @@ period.
      - End of period: minute (LMTZ)
      - 0 - 59
    * - ``total_acc_precip``
-     - Total precipitation accumulated over the period
+     - Total precipitation accumulated over the period. Use -0.1 for a trace.
      - kg m-2 (1 kg m-2 = 1 mm)
    * - ``total_acc_precip_quality``
      - Quality flag for ``total_acc_precip``
@@ -541,7 +541,7 @@ accumulated over that period.
      - End of period: minute (LMTZ)
      - 0 - 59
    * - ``depth_of_fresh_snow``
-     - Depth of fresh snow accumulated over the period
+     - Depth of fresh snow accumulated over the period. Use -0.01 for a trace and -0.02 for snow cover that is not continuous.
      - m
    * - ``depth_of_fresh_snow_quality``
      - Quality flag for ``depth_of_fresh_snow``
