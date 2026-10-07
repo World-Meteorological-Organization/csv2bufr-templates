@@ -15,7 +15,6 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 import os
-import re
 import wmo_sphinx_theme
 
 # -- Project information -----------------------------------------------------
@@ -24,23 +23,13 @@ author = 'World Meteorological Organization (WMO)'
 license = 'This work is licensed under a Creative Commons Attribution 4.0 International License'  # noqa
 copyright = '2021-2023, ' + author + ' ' + license
 
-# The full version, including alpha/beta/rc tags
-
-# file_ = '../csv2bufr/__init__.py'
-# filepath = os.path.join(os.path.abspath('..'), file_)
-
-# with open(filepath) as fh:
-#     contents = fh.read().strip()
-
-#     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
-#                               contents, re.M)
-#     if version_match:
-#         version = version_match.group(1)
-#     else:
-#         version = 'UNKNOWN'
-
-version = 'UNKNOWN'
-release = version
+# The full version, including alpha/beta/rc tags, is read from VERSION.txt
+# at the root of the repository; version is the short X.Y form.
+_version_file = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             '..', '..', 'VERSION.txt')
+with open(_version_file) as fh:
+    release = fh.read().strip()
+version = '.'.join(release.split('.')[:2])
 # -- General configuration ---------------------------------------------------
 master_doc = 'index'
 
