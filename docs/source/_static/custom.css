@@ -1,0 +1,25 @@
+/* Widen the content area (sphinx_rtd_theme default is 800px) */
+.wy-nav-content {
+    max-width: 1200px;
+}
+
+/* Let table cells wrap instead of forcing horizontal scrolling */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+}
+
+/* Give every table the full content width, centred, with the column
+   proportions set by :widths: rather than by the cell contents */
+table.docutils {
+    width: 100%;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Long column names (e.g. in ``literal`` text) can break onto the next line */
+table.docutils td code,
+table.docutils td .literal {
+    overflow-wrap: anywhere;
+}

@@ -3,12 +3,35 @@
     "metadata": {
         "label": "Surface land stations (AWS)",
         "description": "Mapping template for converting CSV data from simplified automatic weather station file to BUFR sequence 301150, 307096",
-        "version": "5",
+        "version": "6",
         "author": "David I. Berry",
-        "editor": "",
+        "editor": "David I. Berry",
         "dateCreated": "2023-09-01",
-        "dateModified": "2024-01-12",
-        "id": "21327aac-46a6-437d-ae81-7a16a637dd2c"
+        "dateModified": "2026-10-07",
+        "id": "1d3daee7-9fe6-4170-a2a9-1946ebf2806e",
+        "references": [
+            {
+                "title": "Manual on Codes (WMO-No. 306), Volume I.2",
+                "section": "BUFR Table D - 3 07 096"
+            }
+        ],
+        "history": [
+            {
+                "version": "5",
+                "id": "21327aac-46a6-437d-ae81-7a16a637dd2c",
+                "date": "2024-01-12",
+                "editor": "David I. Berry",
+                "changes": "Version 5, moved to this repository from csv2bufr. Earlier versions are in the csv2bufr repository history."
+            },
+            {
+                "version": "6",
+                "id": "1d3daee7-9fe6-4170-a2a9-1946ebf2806e",
+                "date": "2026-10-07",
+                "editor": "David I. Berry",
+                "changes": "anemometer_height mapped to #4#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform (wind sensor height in 3 07 096). In version 5 it was mapped to #8#, the precipitation gauge height, so the anemometer height was overwritten by rain_sensor_height and encoded as missing.",
+                "references": ["BUFR Table D 3 07 096"]
+            }
+        ]
     },
     "inputShortDelayedDescriptorReplicationFactor": [],
     "inputDelayedDescriptorReplicationFactor": [1,1],
@@ -62,7 +85,7 @@
         {"eccodes_key": "#1#methodOfSnowDepthMeasurement", "value": "data:method_of_snow_depth_measurement", "valid_min": "const:0", "valid_max": "const:15"},
         {"eccodes_key": "#1#totalSnowDepth", "value": "data:snow_depth", "valid_min": "const:-0.02", "valid_max": "const:655.33"},
         {"eccodes_key": "#1#precipitationIntensityHighAccuracy", "value": "data:precipitation_intensity", "valid_min": "const:-0.00001", "valid_max": "const:0.65534"},
-        {"eccodes_key": "#8#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform", "value": "data:anemometer_height", "valid_min": "const:0", "valid_max": "const:655.35"},
+        {"eccodes_key": "#4#heightOfSensorAboveLocalGroundOrDeckOfMarinePlatform", "value": "data:anemometer_height", "valid_min": "const:0", "valid_max": "const:655.35"},
         {"eccodes_key": "#3#timeSignificance", "value": "const:2", "valid_min": "const:2", "valid_max": "const:2"},
         {"eccodes_key": "#6#timePeriod", "value": "data:time_period_of_wind", "valid_min": "const:-10", "valid_max": "const:0"},
         {"eccodes_key": "#1#windDirection", "value": "data:wind_direction", "valid_min": "const:0", "valid_max": "const:360"},
